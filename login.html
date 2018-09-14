@@ -26,7 +26,7 @@
 
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <!-- Custome CSS-->
+    <!-- Custom CSS-->
     <link href="css/custom-style.css" type="text/css" rel="stylesheet" media="screen,projection">
     <!-- CSS style Horizontal Nav (Layout 03)-->
     <link href="css/style-horizontal.css" type="text/css" rel="stylesheet" media="screen,projection">
@@ -60,13 +60,13 @@
         </div>
         <div class="row margin">
           <div class="input-field col s12">
-            <input id="emal" type="text">
+            <input id="email" type="text"></input>
             <label for="email" class="center-align">Email</label>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
-            <input id="password" type="password">
+            <input id="password" type="password"></input>
             <label for="password">Password</label>
           </div>
         </div>
@@ -78,7 +78,7 @@
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <a href="index.html" class="btn waves-effect waves-light col s12">Login</a>
+            <a onclick="siweap()" class="btn waves-effect waves-light col s12">Login</a>
           </div>
         </div>
         <div class="row">
@@ -99,7 +99,21 @@
   <!-- ================================================
     Scripts
     ================================================ -->
+  <!-- Firebase Library --->
 
+  <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCnj35jGnliV-l7H8vweF4LKO5Du7hpoaE",
+      authDomain: "website-3f24e.firebaseapp.com",
+      databaseURL: "https://website-3f24e.firebaseio.com",
+      projectId: "website-3f24e",
+      storageBucket: "website-3f24e.appspot.com",
+      messagingSenderId: "938772180783"
+    };
+    firebase.initializeApp(config);
+  </script>
   <!-- jQuery Library -->
   <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
   <!--materialize js-->
@@ -111,6 +125,8 @@
 
   <!--plugins.js - Some Specific JS codes for Plugin Settings-->
   <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="JS/index.js"></script>
+
 
 
 
